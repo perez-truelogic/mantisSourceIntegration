@@ -29,6 +29,17 @@ get_header(); ?>
                 } ?>
             
             
+	        <?php // print content of front page 
+                if ( have_posts() ) {
+                    while ( have_posts() ) {
+                        the_post();
+
+                        if ( get_the_content() ) {
+                            get_template_part( 'content', 'page' );
+                        }
+                    }
+                } ?>
+            
             </div><!--span12-->
             
         </div><!--row-fluid-->

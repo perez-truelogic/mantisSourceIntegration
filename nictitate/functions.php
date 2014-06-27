@@ -10,11 +10,6 @@ define('KOPA_CPANEL_IMAGE_DIR', get_template_directory_uri() . '/library/images/
 require trailingslashit(get_template_directory()) . '/library/kopa.php';
 
 /*
- * Initialize layout settings and dynamic sidebar settings
- */
-require trailingslashit(get_template_directory()) . '/library/ini.php';
-
-/*
  * Get google fonts array
  */
 require trailingslashit(get_template_directory()) . '/library/includes/google-fonts.php';

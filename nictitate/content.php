@@ -8,12 +8,7 @@ $layout_id = $kopa_setting['layout_id'];
         $thumbnail_id = get_post_thumbnail_id();
         $thumbnail = wp_get_attachment_image_src( $thumbnail_id, 'kopa-image-size-0' );
         ?>
-        <div class="entry-thumb hover-effect">
-            <div class="mask">
-                <a class="link-detail" href="<?php the_permalink(); ?>" data-icon="&#xf0c1;"></a>
-            </div>
-            <img src="<?php echo $thumbnail[0]; ?>" alt="<?php the_title(); ?>">
-        </div>
+      
         <?php endif; // endif has_post_thumbnail ?>
         <div class="entry-content">
             <header>

@@ -26,6 +26,23 @@ $layout_id = $kopa_setting['layout_id'];
                         endif; ?>
 
                     </ul>
+                    
+                    <ul class="slides2">
+
+                        <?php if ( isset( $gallery_ids ) && is_array( $gallery_ids ) ) :
+                            foreach ( $gallery_ids as $id ) : 
+                                $thumbnail = wp_get_attachment_image_src( $id, 'kopa-image-size-0' );
+                            ?>
+                            <li class="hover-effect">
+                                <div class="mask">
+                                    <a class="link-detail" href="<?php the_permalink(); ?>" data-icon="&#xf0c1;"></a>
+                                </div>
+                                <img src="<?php echo $thumbnail[0]; ?>" alt="<?php the_title(); ?>">
+                            </li>
+                        <?php endforeach; 
+                        endif; ?>
+
+                    </ul>
                 </div>
                 
             </div>
