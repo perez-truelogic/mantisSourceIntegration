@@ -7,26 +7,7 @@ $layout_id = $kopa_setting['layout_id'];
     <article class="entry-item gallery-post <?php echo $layout_id == 'blog-2-right-sidebar' ? 'clearfix' : ''; ?>">
         <?php if ( ! empty( $gallery ) ) : ?> 
             <div class="entry-thumb">
-                <?php
-                if ( isset( $gallery[0] ) ) {
-                    $gallery = $gallery[0];
-                    if ( isset( $gallery['shortcode'] ) ) {
-                        $shortcode = $gallery['shortcode'];
-
-                        // get gallery string ids
-                        preg_match_all('/ids=\"(?:\d+,*)+\"/', $shortcode, $gallery_string_ids);
-                        if ( isset( $gallery_string_ids[0][0] ) ) {
-                            $gallery_string_ids = $gallery_string_ids[0][0];
-
-                            // get array of image id
-                            preg_match_all('/\d+/', $gallery_string_ids, $gallery_ids);
-                            if ( isset( $gallery_ids[0] ) ) {
-                                $gallery_ids = $gallery_ids[0];
-                            }
-                        }
-                    }
-                }
-                ?>
+           
                 
                 <div class="flexslider blogpost-slider">
                     <ul class="slides">

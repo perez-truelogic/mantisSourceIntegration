@@ -28,9 +28,6 @@ get_header(); ?>
                     }
                 } ?>
             
-                <?php if ( is_active_sidebar( $sidebars[1] ) ) 
-                    dynamic_sidebar( $sidebars[1] );
-                ?>
             
             </div><!--span12-->
             
