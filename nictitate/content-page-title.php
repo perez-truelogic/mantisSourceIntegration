@@ -9,9 +9,12 @@
                     } elseif( is_tax( 'product_cat' ) || is_tax( 'product_tag' ) ) {
                         $queried_object = get_queried_object();
                         echo $queried_object->name;
+                    
                     } elseif( is_post_type_archive('product') && jigoshop_get_page_id('shop') ) {   
                         echo get_the_title( jigoshop_get_page_id('shop') );
-                    } else {
+		    } elseif( is_post_type_archive('product') && jigoshop_get_page_id('shop') ) {   
+                        echo get_the_title( jigoshop_get_page_id('shop') );
+                    } else {    
                         single_post_title();
                     }
                     ?></h3>

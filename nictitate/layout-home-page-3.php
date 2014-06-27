@@ -50,7 +50,7 @@ get_header(); ?>
         <div class="row-fluid">
             <div class="span12">
                 
-                <div id="main-col">
+                <div id="new-id">
 
                     <?php if ( is_active_sidebar($sidebars[2] ) )
                         dynamic_sidebar( $sidebars[2] );

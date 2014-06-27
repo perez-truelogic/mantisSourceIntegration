@@ -25,6 +25,7 @@ require trailingslashit(get_template_directory()) . '/library/includes/ajax.php'
 require trailingslashit(get_template_directory()) . '/library/includes/metabox/post.php';
 require trailingslashit(get_template_directory()) . '/library/includes/metabox/category.php';
 require trailingslashit(get_template_directory()) . '/library/includes/metabox/page.php';
+require trailingslashit(get_template_directory()) . '/library/includes/metabox/page2.php';
 
 /*
  * Set up theme defaults and registers support for various WordPress features.
